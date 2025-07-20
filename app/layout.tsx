@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Noto_Sans_Arabic } from "next/font/google"
-import "./globals.css"
+import "@/styles/globals.css"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import FloatingChatButton from "@/components/floating-chat-button"
