@@ -110,7 +110,7 @@ export default function HomePage() {
                     <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">Our Story</h2>
                     <div className="space-y-2 text-xs sm:text-sm text-gray-600">
                   <p>
-                    <strong>Assalam Alikum!</strong> We're an international, non-profit Egyptian Islamic school with one heartfelt mission: helping Muslim children truly love and understand their faith.
+                    <strong>Assalamu Alaikum!</strong> We're an international, non-profit Egyptian Islamic school with one heartfelt mission: helping Muslim children truly love and understand their faith.
                   </p>
                   <p>
                     Through exploring the Holy Qur'an and the Sunnah of Prophet Muhammad (peace be upon him), we aim to bring knowledge to life in a way that's authentic, reliable, and inspiring.
