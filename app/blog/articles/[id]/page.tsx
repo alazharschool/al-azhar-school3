@@ -433,8 +433,8 @@ const articlesData = {
   }
 }
 
-export default function ArticlePage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function ArticlePage({ params }: { params: { id: string } }) {
+  const { id } = params;
   const article = articlesData[id as keyof typeof articlesData]
 
   if (!article) {

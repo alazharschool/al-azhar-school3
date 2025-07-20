@@ -1,11 +1,9 @@
 "use client";
-import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 
-export default function StudentDashboard() {
-  const router = useRouter()
-  const { id } = router.query
+export default function StudentDashboard({ params }: { params: { id: string } }) {
+  const { id } = params;
 
   type Student = {
     full_name: string
@@ -39,7 +37,7 @@ export default function StudentDashboard() {
 
   return (
     <div>
-      <h1>مرحبا {student.full_name}</h1>
+      <h1>مرحباً {student.full_name}</h1>
       <p>الدروس الكلية: {student.total_lessons}</p>
       <p>عدد الساعات: {student.study_hours}</p>
       <p>عدد الأيام: {student.study_days}</p>
