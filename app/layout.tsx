@@ -1,9 +1,10 @@
-import './globals.css';
+import '../styles/globals.css';
 import { Noto_Sans_Arabic } from "next/font/google";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import FloatingChatButton from "@/components/floating-chat-button";
 import { UserProvider } from "@/contexts/UserContext";
+import type { ReactNode } from "react";
 
 const notoSansArabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
@@ -17,7 +18,7 @@ export const metadata = {
   generator: 'v0.dev'
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={notoSansArabic.className}>
