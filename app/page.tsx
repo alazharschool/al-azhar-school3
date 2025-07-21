@@ -1,5 +1,7 @@
 'use client'
 
+import '../styles.css'; // أو المسار الصحيح للملف
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Users, Globe, Award, Star, Clock, GraduationCap } from "lucide-react";
 import Link from "next/link";

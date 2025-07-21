@@ -96,3 +96,15 @@ const config: Config = {
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
+
+module.exports = {
+	content: [
+	  "./app/**/*.{js,ts,jsx,tsx}",
+	  "./components/**/*.{js,ts,jsx,tsx}",
+	],
+	theme: {
+	  extend: {},
+	},
+	plugins: [],
+  }
+  
