@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/app/output.css" />
+        <link rel="stylesheet" href="/output.css" />
       </head>
       <body className={notoSansArabic.className}>
         <UserProvider>
