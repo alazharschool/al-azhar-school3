@@ -58,7 +58,7 @@ export default function Navigation() {
               </div>
             </div>
             <span
-              className="brand-text text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-black group-hover:text-yellow-600 transition-colors duration-300"
+              className="brand-text text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black group-hover:text-yellow-600 transition-colors duration-300"
               style={{ 
                 fontWeight: 900,
                 textShadow: '0 8px 32px #000000cc, 0 4px 16px #00000099, 0 2px 8px #00000066, 0 1px 2px #00000044',
@@ -125,7 +125,7 @@ export default function Navigation() {
               </a>
             <a
               href="/contact"
-              className="block w-fit bg-white text-amber-600 px-6 py-2 text-base rounded-full font-bold border border-[#8B4513] transition-all duration-200 shadow hover:bg-[#ffb300] hover:text-white"
+              className="block w-fit bg-white text-amber-600 px-4 py-1.5 text-sm rounded-full font-bold border border-[#8B4513] transition-all duration-200 shadow hover:bg-[#ffb300] hover:text-white"
               style={{ borderWidth: '1.2px', boxShadow: '0 6px 24px #000b', fontFamily: 'Noto Serif', fontWeight: 900, letterSpacing: '1.2px' }}
             >
                     Get Started
@@ -200,7 +200,7 @@ export default function Navigation() {
                   </Button>
                 <Button
                   asChild
-                    className="bg-yellow-600 hover:bg-yellow-700 text-black rounded-full hover:scale-105 hover:shadow-gold transition-all duration-300 btn-premium text-sm sm:text-base"
+                    className="bg-yellow-600 hover:bg-yellow-700 text-black rounded-full hover:scale-105 hover:shadow-gold transition-all duration-300 btn-premium text-xs sm:text-sm px-4 py-1.5"
                 >
                     <Link href="/contact" onClick={() => setIsOpen(false)}>
                     Get Started
