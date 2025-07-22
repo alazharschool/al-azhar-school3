@@ -11,6 +11,7 @@ import Link from "next/link"
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import Footer from '../../../components/footer';
+import React from "react";
 
 // Sample articles data
 const articles = [
@@ -152,15 +153,14 @@ export default function ArticlesPage() {
     return matchesSearch && matchesCategory;
   });
 
-  function handleSubscribe(e?) {
-    if (e) e.preventDefault();
+  function handleSubscribe() {
     // تحقق من صحة البريد الإلكتروني
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       toast({ title: "Invalid Email", description: "Please enter a valid email address.", variant: "destructive" });
       return;
     }
-    toast({ title: "Subscribed!", description: "You have been subscribed to our newsletter.", variant: "success" });
+    toast({ title: "Subscribed!", description: "You have been subscribed to our newsletter.", variant: "default" });
     setEmail("");
   }
 
@@ -576,7 +576,7 @@ export default function ArticlesPage() {
               <AnimatedButton
                 size="lg"
                 className="bg-white text-white hover:text-[#8B4513] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors duration-200 font-bold"
-                onClick={(e) => handleSubscribe(e)}
+                onClick={() => handleSubscribe()}
               >
                 Subscribe
               </AnimatedButton>

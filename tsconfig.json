@@ -36,7 +36,7 @@
     "lib/**/*.ts",
     "lib/**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/test/page.jsx"  ],
   "exclude": [
     "node_modules",
     ".next"
