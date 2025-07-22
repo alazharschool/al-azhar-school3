@@ -26,12 +26,11 @@ export function AnimatedCounter({ value, suffix = "", className = "" }: Animated
   }, [isClient, hasIntersected, startAnimation])
 
   // إذا لم يكن client بعد، اعرض الرقم النهائي مباشرة
-  const displayCount = isClient ? count : value
+  const displayCount = isClient ? count.toLocaleString() : value.toString()
 
   return (
     <div ref={ref} className={className} style={{ display: 'flex', gap: '2px', justifyContent: 'center' }}>
       {displayCount
-        .toLocaleString()
         .replace(/,/g, '')
         .padStart(value.toString().length, '0')
         .split('')
