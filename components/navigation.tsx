@@ -105,7 +105,7 @@ export default function Navigation() {
                   <button
                     onClick={() => {
                       logout();
-                      window.location.href = '/';
+                      if (typeof window !== 'undefined') window.location.href = '/';
                     }}
                     className="block w-fit bg-[#8B4513] text-white px-6 py-2 text-base rounded-full font-bold border border-[#654321] transition-all duration-200 shadow hover:bg-[#654321]"
                     style={{ borderWidth: '1.2px', boxShadow: '0 6px 24px #000b', fontFamily: 'Noto Serif', fontWeight: 900, letterSpacing: '1.2px' }}
@@ -179,7 +179,7 @@ export default function Navigation() {
                         onClick={() => {
                           logout();
                           setIsOpen(false);
-                          window.location.href = '/';
+                          if (typeof window !== 'undefined') window.location.href = '/';
                         }}
                         className="bg-[#8B4513] hover:bg-[#654321] text-white rounded-full hover:scale-105 transition-all duration-300 text-sm sm:text-base"
                       >

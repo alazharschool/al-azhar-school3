@@ -22,7 +22,7 @@ export default function ContactPage() {
     e.preventDefault();
     const phone = "201023594533";
     const fullMessage = `الاسم: ${name}\nرقم الهاتف: ${userPhone}\nالرسالة: ${message}`;
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(fullMessage)}`, "_blank");
+    if (typeof window !== 'undefined') window.open(`https://wa.me/${phone}?text=${encodeURIComponent(fullMessage)}`, "_blank");
     setSubmitted(true);
     setName("");
     setUserPhone("");

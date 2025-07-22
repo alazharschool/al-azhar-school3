@@ -96,7 +96,7 @@ export default function SchedulePage() {
       
       if (timeDiff <= 10) {
         // Open Zoom link
-        window.open(lesson.zoomLink, '_blank');
+        if (typeof window !== 'undefined') window.open(lesson.zoomLink, '_blank');
         alert(`Joining Zoom lesson with ${lesson.teacher}...`);
       } else {
         alert(`⚠️ Lesson is not active yet.\n\n📅 Date: ${lesson.date}\n⏰ Time: ${lesson.time}\n\nPlease join only during the scheduled lesson time.`);

@@ -62,12 +62,12 @@ export default function AdminDashboardPage() {
   };
 
   const handleViewPage = (page: string) => {
-    window.open(`/${page}`, '_blank');
+    if (typeof window !== 'undefined') window.open(`/${page}`, '_blank');
   };
 
   const handleViewAsStudent = (studentId: string) => {
     // In real system, this would impersonate a student
-    window.open(`/dashboard?student=${studentId}`, '_blank');
+    if (typeof window !== 'undefined') window.open(`/dashboard?student=${studentId}`, '_blank');
   };
 
   // Mock data for demonstration

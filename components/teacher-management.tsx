@@ -210,14 +210,14 @@ export function TeacherManagement({ teacherId }: TeacherManagementProps) {
           
           <div className="flex gap-2 pt-4 border-t">
             <Button 
-              onClick={() => window.open(`mailto:${teacher.email}`, '_blank')}
+              onClick={() => { if (typeof window !== 'undefined') window.open(`mailto:${teacher.email}`, '_blank'); }}
               className="flex-1"
             >
               <Mail className="w-4 h-4 mr-2" />
               Send Email
             </Button>
             <Button 
-              onClick={() => window.open(`tel:${teacher.phone}`, '_blank')}
+              onClick={() => { if (typeof window !== 'undefined') window.open(`tel:${teacher.phone}`, '_blank'); }}
               variant="outline"
               className="flex-1"
             >
