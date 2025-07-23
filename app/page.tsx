@@ -18,6 +18,7 @@ import { use } from "react"
 export default function HomePage() {
   return (
     <>
+      <div className="bg-red-500 text-white p-10 text-2xl text-center">TEST TAILWIND - إذا رأيت هذا المربع، Tailwind يعمل</div>
       {/* ديكور صورة القرآن في الخلفية يمين الصفحة */}
       <div
         style={{
