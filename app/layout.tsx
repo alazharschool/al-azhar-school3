@@ -1,3 +1,4 @@
+// Trigger Vercel full rebuild - cache busting
 import type React from "react"
 import type { Metadata } from "next"
 import { Noto_Sans_Arabic } from "next/font/google"
